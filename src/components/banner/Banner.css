@@ -6,6 +6,7 @@
     background-image: url("../../images/BannerImg.webp");
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #banner img {

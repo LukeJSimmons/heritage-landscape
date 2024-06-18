@@ -1,14 +1,20 @@
 #services {
     display: flex;
     justify-content: space-around;
-    padding: 8rem;
+    flex-wrap: wrap;
+    padding: 5rem;
+    background-image: url('../../images/grassBG.webp');
+    background-size: cover;
+    box-shadow: -5px -5px 20px black;
 }
 
 .service {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: #3B7D4F;
     padding: 1rem;
+    margin: 1rem;
     border-radius: 1rem;
+    box-shadow: 5px 5px 20px black;
 }
 
 .service img {
