@@ -1,0 +1,11 @@
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89vh;
+    background-color: black;
+}
+
+#banner img {
+    height: 20rem;
+}
