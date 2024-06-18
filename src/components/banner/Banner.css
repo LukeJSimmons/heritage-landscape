@@ -2,8 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 89vh;
-    background-color: black;
+    height: 100vh;
+    background-image: url("../../images/BannerImg.webp");
+    background-position: center;
+    background-size: cover;
 }
 
 #banner img {

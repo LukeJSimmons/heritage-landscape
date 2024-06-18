@@ -1,17 +1,57 @@
 header {
+    position: fixed;
+    background-color: #FFF;
     width: 100%;
-    background-color: white;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 0px 3px 20px black;
+    transition: top 0.2s;
 }
 
 header ul {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 0;
 }
 
 header ul li {
     display: inline;
-    list-style: none;
     font-weight: bold;
+}
+
+header a {
+    transition: color 0.1s;
+}
+
+header a:hover {
+    color: #25375c;
+}
+
+header img {
+    display: none;
+    width: 50px;
+    margin-right: 10px;
+}
+
+#navScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#navScreen a {
+    padding-right: 15px;
+    margin-bottom: -15px;
+}
+
+@media screen and (max-width: 650px) {
+    header .flex {
+        justify-content: right;
+        align-items: center;
+    }
+    header ul li {
+        display: none;
+    }
+    header img {
+        display: inline;
+    }
 }
