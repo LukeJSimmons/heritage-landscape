@@ -1,0 +1,16 @@
+#services {
+    display: flex;
+    justify-content: space-around;
+    padding: 8rem;
+}
+
+.service {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.service img {
+    height: 10rem;
+}
