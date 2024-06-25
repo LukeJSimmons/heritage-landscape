@@ -1,3 +1,18 @@
 #about {
-    padding: 5rem;
+    padding: 3rem 0;
+}
+
+#about div {
+    background: linear-gradient(to bottom, #112a2d 0%, #112a2d 47%, white 47%, white 53%, #112a2d 53%, #112a2d 100%);
+}
+
+#about img {
+    width: 33%;
+    border-radius: 2rem;
+    border: 0.75rem solid white;
+}
+
+#about h1,
+#about p {
+    padding: 0 5rem;
 }
