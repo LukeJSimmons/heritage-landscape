@@ -1,18 +1,25 @@
 #services {
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: #112a2d;
+    box-shadow: -5px -5px 20px black;
+}
+
+.container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 5rem;
-    background-image: url('../../images/grassBG.webp');
-    background-size: cover;
-    box-shadow: -5px -5px 20px black;
 }
 
 .service {
     background-color: white;
-    color: #3B7D4F;
+    color: #112a2d;
     padding: 1rem;
     margin: 1rem;
+    border: 5px solid #112a2d;
+    outline: 5px solid white;
     border-radius: 1rem;
     box-shadow: 5px 5px 20px black;
 }

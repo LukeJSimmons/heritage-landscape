@@ -1,7 +1,8 @@
 import React from "react";
 import './Services.css';
 
-import Mowing from '../../images/HeritageLogo.png';
+import Mowing from '../../images/MowingIcon.png';
+import Hauling from '../../images/HaulingIcon.png';
 
 const services = [
 {
@@ -11,10 +12,10 @@ const services = [
     alt: 'Mowing'
 },
 {
-    title: 'Mowing',
-    description: 'mowing, mowing, mowing',
-    img: Mowing,
-    alt: 'Mowing'
+    title: 'Hauling',
+    description: 'Hauling, Hauling, Hauling',
+    img: Hauling,
+    alt: 'Hauling'
 },
 {
     title: 'Mowing',
@@ -22,18 +23,27 @@ const services = [
     img: Mowing,
     alt: 'Mowing'
 },
+{
+    title: 'Hauling',
+    description: 'Hauling, Hauling, Hauling',
+    img: Hauling,
+    alt: 'Hauling'
+},
 ];
 
 const Services = () => {
     return (
         <div id="services">
-            {services.map(service => {
-                return (<div className="service">
-                    <img src={service.img} alt={service.alt} />
-                    <h1>{service.title}</h1>
-                    <p>{service.description}</p>
-                </div>)
-            })}
+            <h1>Our Services</h1>
+            <div className="container">
+                {services.map(service => {
+                    return (<div className="service">
+                        <img src={service.img} alt={service.alt} />
+                        <h1>{service.title}</h1>
+                        <p>{service.description}</p>
+                    </div>)
+                })}
+            </div>
         </div>
     );
 };
