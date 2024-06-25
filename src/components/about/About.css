@@ -9,10 +9,12 @@
 #about img {
     width: 33%;
     border-radius: 2rem;
-    border: 0.75rem solid white;
+    border: 0.75rem solid #112a2d;
+    outline: 0.75rem solid white;
+    box-shadow: 0 0 10px black;
 }
 
 #about h1,
 #about p {
-    padding: 0 5rem;
+    padding: 0 15rem;
 }

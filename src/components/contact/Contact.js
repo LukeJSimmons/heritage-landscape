@@ -5,8 +5,8 @@ const Contact = () => {
     return (
         <div id="contact">
             <h1>Contact</h1>
-            <p>phone</p>
-            <p>email</p>
+            <h3>555-555-5555</h3>
+            <h3>exampleemail@email.com</h3>
         </div>
     );
 };
