@@ -1,8 +1,8 @@
 import React from "react";
 import './Services.css';
 
-import Mowing from '../../images/MowingIcon.png';
-import Hauling from '../../images/HaulingIcon.png';
+import Mowing from '../../images/MowingIcon.webp';
+import Hauling from '../../images/HaulingIcon.webp';
 
 const services = [
 {
