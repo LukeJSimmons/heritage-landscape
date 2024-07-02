@@ -1,8 +1,6 @@
 import React from "react";
 import './About.css';
 
-import Img from '../../images/group.png';
-
 const About = () => {
     return (
         <div id="about">

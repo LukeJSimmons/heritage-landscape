@@ -6,7 +6,7 @@ import Logo from '../../images/HeritageLogo.png';
 const Banner = () => {
     return (
         <div id="banner">
-            <img src={Logo} />
+            <img src={Logo} alt="Heritage landscape management logo" />
         </div>
     );
 };
