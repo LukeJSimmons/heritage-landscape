@@ -1,20 +1,36 @@
 #about {
-    padding: 3rem 0;
+    padding: 5rem 0;
+    background-image: url('../../images/group.png');
+    background-size: cover;
+    position: relative;
+    z-index: -2;
 }
 
-#about div {
-    background: linear-gradient(to bottom, #112a2d 0%, #112a2d 47%, white 47%, white 53%, #112a2d 53%, #112a2d 100%);
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -2;
 }
 
 #about img {
-    width: 33%;
-    border-radius: 2rem;
-    border: 0.75rem solid #112a2d;
-    outline: 0.75rem solid white;
+    width: 100%;
     box-shadow: 0 0 10px black;
+    filter: brightness(0.5);
 }
 
 #about h1,
 #about p {
-    padding: 0 15rem;
+    padding: 0 10vh;
+    z-index: 2;
+}
+
+@media screen and (max-width: 600px) {
+    #about img {
+        width: 60%;
+    }
 }

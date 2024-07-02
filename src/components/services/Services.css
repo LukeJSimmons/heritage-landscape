@@ -1,8 +1,8 @@
 #services {
-    padding-top: 1rem;
-    padding-bottom: 5rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+    padding-left: 15vh;
+    padding-right: 15vh;
     background-color: #112a2d;
     box-shadow: -5px -5px 20px black;
 }
@@ -14,18 +14,36 @@
 }
 
 .service {
-    width: 20vh;
-    height: 30vh;
+    width: 15%;
     background-color: white;
-    color: #112a2d;
+    color: #3B7D4F;
     padding: 1rem;
-    margin: 1rem;
-    border: 5px solid #112a2d;
+    margin: 2rem;
+    border: 5px solid #3B7D4F;
     outline: 5px solid white;
     border-radius: 1rem;
     box-shadow: 5px 5px 20px black;
 }
 
 .service img {
-    height: 45%;
+    height: 9vw;
+}
+
+@media screen and (max-width: 700px) {
+    .service {
+        width: 30%;
+    }
+    #services {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 434px) {
+    .service {
+        width: 50%;
+    }
+    .service img {
+        height: 9vh;
+    }
 }

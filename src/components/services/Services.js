@@ -23,12 +23,6 @@ const services = [
     img: Mowing,
     alt: 'Mowing'
 },
-{
-    title: 'Hauling',
-    description: 'Hauling, Hauling, Hauling',
-    img: Hauling,
-    alt: 'Hauling'
-},
 ];
 
 const Services = () => {
