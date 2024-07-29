@@ -1,6 +1,10 @@
 import React from "react";
 import './Header.css';
 
+import { Link } from "react-router-dom";
+
+import Logo from '../../images/HeritageLogo.png';
+
 const Header = () => {
     let prevScrollPos = window.scrollY;
 
@@ -11,7 +15,7 @@ const Header = () => {
         if (prevScrollPos > currentScrollPos) {
             header.style.top = '0';
         } else {
-            header.style.top = '-80px';
+            header.style.top = '-125px';
         }
 
         prevScrollPos = currentScrollPos;
@@ -20,10 +24,13 @@ const Header = () => {
     return (
         <header id="header">
             <ul>
-                <li><a href="#banner">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><Link to="/"><img src={Logo} alt="" /></Link></li>
+                <div>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/">Services</Link></li>
+                    <li><Link to="/">About</Link></li>
+                </div>
+                <li><Link to="/">Contact Us</Link></li>
             </ul>
         </header>
     );

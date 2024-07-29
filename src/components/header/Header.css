@@ -10,12 +10,19 @@ header {
 
 header ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header ul li {
     display: inline;
     font-weight: bold;
+    padding: 0 2vw;
+    font-size: 1.5rem;
+}
+
+header li div {
+    padding: 0 10vw;
 }
 
 header a {
@@ -27,9 +34,9 @@ header a:hover {
 }
 
 header img {
-    display: none;
-    width: 50px;
-    margin-right: 10px;
+    width: 10vh;
+    margin: 0;
+    padding: 0;
 }
 
 #navScreen {
@@ -49,9 +56,9 @@ header img {
         align-items: center;
     }
     header ul li {
-        display: none;
+        font-size: 1rem;
     }
     header img {
-        display: inline;
+        display: none;
     }
 }
