@@ -15,7 +15,7 @@ const Header = () => {
         if (prevScrollPos > currentScrollPos) {
             header.style.top = '0';
         } else {
-            header.style.top = '-125px';
+            header.style.top = '-138px';
         }
 
         prevScrollPos = currentScrollPos;
