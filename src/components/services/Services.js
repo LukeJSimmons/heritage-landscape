@@ -1,27 +1,27 @@
 import React from "react";
 import './Services.css';
 
-import Mowing from '../../images/MowingIcon.webp';
-import Hauling from '../../images/HaulingIcon.webp';
+import { Link } from "react-router-dom";
+
 
 const services = [
 {
     title: 'Mowing',
     description: 'mowing, mowing, mowing',
-    img: Mowing,
+    img: "../../images/stock1.jpg",
     alt: 'Mowing'
 },
 {
     title: 'Hauling',
     description: 'Hauling, Hauling, Hauling',
-    img: Hauling,
+    img: "../../images/stock2.jpg",
     alt: 'Hauling'
 },
 {
-    title: 'Mowing',
-    description: 'mowing, mowing, mowing',
-    img: Mowing,
-    alt: 'Mowing'
+    title: 'Other',
+    description: 'Other, Other, Other',
+    img: "../../images/stock3.jpg",
+    alt: 'Other'
 },
 ];
 
@@ -31,11 +31,10 @@ const Services = () => {
             <h1>Our Services</h1>
             <div className="container">
                 {services.map(service => {
-                    return (<div className="service">
-                        <img src={service.img} alt={service.alt} />
+                    return (<Link to="/" className="service" id={service.title}>
                         <h1>{service.title}</h1>
                         <p>{service.description}</p>
-                    </div>)
+                    </Link>)
                 })}
             </div>
         </div>

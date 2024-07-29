@@ -56,9 +56,9 @@ header img {
         align-items: center;
     }
     header ul li {
-        font-size: 1rem;
+        display: none;
     }
     header img {
-        display: none;
+        display: inline;
     }
 }
