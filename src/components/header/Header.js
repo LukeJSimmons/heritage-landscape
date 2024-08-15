@@ -13,9 +13,9 @@ const Header = () => {
         const header = document.querySelector('header');
 
         if (prevScrollPos > currentScrollPos) {
-            header.style.top = '0';
+            header.style.opacity = '1';
         } else {
-            header.style.top = '-138px';
+            header.style.opacity = '0';
         }
 
         prevScrollPos = currentScrollPos;
@@ -24,12 +24,10 @@ const Header = () => {
     return (
         <header id="header">
             <ul>
-                <div id="container">
-                    <li><Link to="/"><img src={Logo} alt="" /></Link></li>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/">Services</Link></li>
-                    <li><Link to="/">About</Link></li>
-                </div>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/">Services</Link></li>
+                <li><Link to="/"><img src={Logo} alt="" /></Link></li>
+                <li><Link to="/">About</Link></li>
                 <li><Link to="/">Contact Us</Link></li>
             </ul>
         </header>

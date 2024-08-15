@@ -1,14 +1,24 @@
 #banner {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
     height: 100vh;
-    background-image: url("../../images/BannerImg.webp");
+
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("../../images/BannerImg.webp");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+
+    text-shadow: 0rem 0rem 0.25rem black;
 }
 
-#banner img {
-    height: 40vh;
+#banner h1 {
+    margin: 0;
 }

@@ -1,11 +1,10 @@
 header {
-    position: fixed;
-    background-color: #112a2d;
+    position: absolute;
+    background-color: #112a2d00;
     width: 100%;
     z-index: 1000;
-    top: 0;
-    box-shadow: 0px 2px 10px black;
-    transition: top 0.2s;
+    transition: opacity 0.2s;
+    margin-top: 1rem;
 }
 
 header ul {
@@ -14,20 +13,12 @@ header ul {
     align-items: center;
 }
 
-#container {
-    display: flex;
-    align-items: center;
-}
-
 header ul li {
     display: inline;
     font-weight: bold;
     padding: 0 2vw;
     font-size: 1.25rem;
-}
-
-header li div {
-    padding: 0 10vw;
+    text-shadow: 0rem 0rem 0.25rem black;
 }
 
 header a {
@@ -39,7 +30,7 @@ header a:hover {
 }
 
 header img {
-    width: 10vh;
+    width: 20vh;
     margin: -1rem;
     padding: 0;
 }
