@@ -24,8 +24,8 @@ const Header = () => {
     return (
         <header id="header">
             <ul>
-                <li><Link to="/"><img src={Logo} alt="" /></Link></li>
-                <div>
+                <div id="container">
+                    <li><Link to="/"><img src={Logo} alt="" /></Link></li>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/">Services</Link></li>
                     <li><Link to="/">About</Link></li>
